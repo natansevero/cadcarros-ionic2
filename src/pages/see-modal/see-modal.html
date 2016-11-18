@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-buttons end>
+      <button ion-button (click)="close()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+    <ion-title>Detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let c of carroDetalhes">
+      {{ c }}
+    </ion-item>
+  </ion-list>
+</ion-content>
